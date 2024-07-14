@@ -1,0 +1,26 @@
+<resources>
+    <string-array name="tshirt_names">
+        <item>Gray Full Sleeve</item>
+        <item>Black Round Neck</item>
+        <item>Yellow Half Sleeve</item>
+        <item>Green Round Neck</item>
+    </string-array>
+    <string-array name="tshirt_prices">
+        <item>₹499.00</item>
+        <item>₹499.00</item>
+        <item>₹499.00</item>
+        <item>₹499.00</item>
+    </string-array>
+    <string-array name="tshirt_discounts">
+        <item>40% off</item>
+        <item>20% off</item>
+        <item>40% off</item>
+        <item>20% off</item>
+    </string-array>
+    <integer-array name="tshirt_images">
+        <item>@drawable/big_img1</item>
+        <item>@drawable/big_img2</item>
+        <item>@drawable/big_img3</item>
+        <item>@drawable/big_img4</item>
+    </integer-array>
+</resources>
