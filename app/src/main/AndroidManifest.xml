@@ -24,7 +24,9 @@
         <activity android:name=".BannerPageActivity" />
         <activity android:name=".BannerAdapter" />
         <activity android:name=".CameraActivity" />
+        <activity android:name=".ARActivity" />
         <activity android:name=".NextPageActivity" />
+        <activity android:name=".TShirtDetailActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

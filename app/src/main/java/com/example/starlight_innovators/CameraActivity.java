@@ -1,33 +1,26 @@
 package com.example.starlight_innovators;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.graphics.SurfaceTexture;
-import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraCaptureSession;
-import android.hardware.camera2.CameraDevice;
-import android.hardware.camera2.CameraManager;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Surface;
-import android.view.TextureView;
-import android.view.View;
-import android.widget.Button;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-import java.util.Collections;
 
 public class CameraActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_camera);
 
+        // Create an Intent to open the URL
+        String url = "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e6663fbb13944586ada982f98021fba3&metadata=01";
+        String url_old = "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e6663fbb13944586ada982f98021fba3&metadata=01";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+
+        // Start the Intent
+        startActivity(intent);
+
+        // Optionally, close this activity so the user cannot navigate back to it
+        finish();
     }
-
 }

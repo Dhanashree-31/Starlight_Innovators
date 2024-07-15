@@ -7,7 +7,7 @@
     <ImageView
         android:id="@+id/tshirt_image"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:src="@drawable/big_img1" />
 
@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tshirt_name"
         android:paddingTop="4dp"
-        android:text="₹499.00"
         android:textSize="14sp"
         android:textColor="@android:color/holo_green_dark" />
 
@@ -37,7 +36,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tshirt_price"
         android:paddingTop="4dp"
-        android:text="40% off"
         android:textSize="14sp"
         android:textColor="@android:color/holo_red_dark" />
 </RelativeLayout>
