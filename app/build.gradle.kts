@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 
@@ -30,6 +31,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 dependencies {
@@ -43,6 +47,9 @@ dependencies {
     implementation(libs.sceneform.core){
         exclude(group = "com.android.support")
     }
+    implementation("com.google.ar.sceneform:assets:1.17.1"){
+        exclude(group = "com.android.support")
+    }
 
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -50,6 +57,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.gridlayout)
     implementation(libs.recyclerview)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -21,10 +21,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Starlight_Innovators"
         tools:targetApi="31">
+
         <activity android:name=".BannerPageActivity" />
         <activity android:name=".BannerAdapter" />
         <activity android:name=".CameraActivity" />
-        <activity android:name=".ARActivity" />
+        <activity android:name=".glbSample.ArActivity" />
         <activity android:name=".NextPageActivity" />
         <activity android:name=".TShirtDetailActivity" />
         <activity
