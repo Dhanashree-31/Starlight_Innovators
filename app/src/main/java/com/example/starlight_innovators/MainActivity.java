@@ -21,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
         initArCore();
 
+        ImageView bannerImageView = findViewById(R.id.banner);
+        bannerImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BannerPageActivity.class);
+                startActivity(intent);
+            }
+        });
+
         LinearLayout item1Layout = findViewById(R.id.item1_layout);
         item1Layout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,14 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView bannerImageView = findViewById(R.id.banner);
-        bannerImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BannerPageActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void initArCore() {
